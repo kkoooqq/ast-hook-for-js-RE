@@ -119,3 +119,6 @@ dist
 
 ./src/proxy-server/js-file-cache
 
+yarn.lock
+js-file-cache
+.idea
