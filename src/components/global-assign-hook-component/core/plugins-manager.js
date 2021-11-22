@@ -39,7 +39,7 @@ function loadPluginsAsString() {
     const hookJsCode = fs.readFileSync(path.resolve(__dirname, './hook.js')).toString();
 
     const pluginsJsContentArray = [];
-    const pluginsBaseDirectory = '../components/global-assign-hook-component/plugins/';
+    const pluginsBaseDirectory = path.resolve(__dirname, '../plugins');
     for (let pluginName of pluginsNames) {
         const pluginFilePath = pluginsBaseDirectory + '/' + pluginName;
         const pluginJsContent = fs.readFileSync(pluginFilePath).toString();
